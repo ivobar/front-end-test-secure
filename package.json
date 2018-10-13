@@ -1,0 +1,15 @@
+{
+  "name": "front-end-test-secure",
+  "version": "1.0.0",
+  "description": "Test for job application",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "IBA",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {}
+}
