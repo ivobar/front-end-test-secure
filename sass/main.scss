@@ -1,0 +1,32 @@
+// colors
+$nav-bg: #2a2c2f;
+$nav-link-hover: #da491c;
+$nav-dropdown: #111215;
+$head-controls: #5e6164;
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+.header {
+    background: url(../assets/bg-header.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+img {
+    height: 150px;
+}
