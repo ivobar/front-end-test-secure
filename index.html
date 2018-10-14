@@ -1,41 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/accordion.js"></script>
 </head>
+
 <body>
     <header class="header">
         <nav class="navigation">
             <div class="logo">Front-end Test</div>
             <ul class="links">
-                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
                 <li class="dropdown">
                     <a href="#">About</a>
                     <ul class="dropdown-list">
-                            <li><a href="#">Lorem ipsum</a></li>
-                            <li><a href="#">What we do</a></li>
-                            <li><a href="#">About</a></li>
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+                        <li>
+                            <a href="#">What we do</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
             </ul>
         </nav>
         <div class="title-container">
-            <h1 class="title">We <span>love</span> to write code</h1>
+            <h1 class="title">We
+                <span>love</span> to write code</h1>
             <div class="hor-line"></div>
-            <p class="subhead">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            <p class="subhead">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
+                sint et molestiae non recusandae.</p>
         </div>
         <div class="hero-controls">
             <span class="control-text">hero video controls</span>
-            <img src="assets/controls-play.svg" alt="controls-play" class="play">
-            <img src="assets/controls-sound.svg" alt="controls-sound" class="play">
+            <div class="control-container">
+                <img src="assets/controls-play.svg" alt="controls-play" class="play">
+            </div>
+            <div class="control-container">
+                <img src="assets/controls-sound.svg" alt="controls-sound" class="sound">
+            </div>
         </div>
     </header>
+    <section class="services">
+        <article class="services-left">
+            <h2 class="services-heading">Our specialty</h2>
+            <p class="services-subheading">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p class="services-info">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                ea commodi consequatur?</p>
+            <p class="services-info">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+                cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+        </article>
+        <article class="services-right">
+            <div class="service-card">
+                <img src="./assets/tools.svg" alt="tools" class="card-image">
+                <h4 class="card-head">development</h4>
+                <p class="card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, similique.</p>
+                <div class="card-expand">
+                    <img src="./assets/arrows.svg" alt="arrows" class="card-expand-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./assets/brush.svg" alt="tools" class="card-image">
+                <h4 class="card-head">ui/ux</h4>
+                <p class="card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, similique.</p>
+                <div class="card-expand">
+                    <img src="./assets/arrows.svg" alt="arrows" class="card-expand-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./assets/amplifier.svg" alt="tools" class="card-image">
+                <h4 class="card-head">social marketing</h4>
+                <p class="card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, similique.</p>
+                <div class="card-expand">
+                    <img src="./assets/arrows.svg" alt="arrows" class="card-expand-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./assets/signs.svg" alt="tools" class="card-image">
+                <h4 class="card-head">system architecture</h4>
+                <p class="card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, similique.</p>
+                <div class="card-expand">
+                    <img src="./assets/arrows.svg" alt="arrows" class="card-expand-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./assets/notebook.svg" alt="tools" class="card-image">
+                <h4 class="card-head">copywriting</h4>
+                <p class="card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, similique.</p>
+                <div class="card-expand">
+                    <img src="./assets/arrows.svg" alt="arrows" class="card-expand-icon">
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./assets/camera.svg" alt="tools" class="card-image">
+                <h4 class="card-head">photography</h4>
+                <p class="card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, similique.</p>
+                <div class="card-expand">
+                    <img src="./assets/arrows.svg" alt="arrows" class="card-expand-icon">
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="parallax">
+        <article class="parallax-head">
+            <h4 class="top-head">Clean & modern design + paralax effect for img.</h4>
+            <div class="hor-line"></div>
+            <h2 class="bot-head">Looks great on mobile devices</h2>
+            <div class="parallax-controls">
+                <button class="btn">Contact us</button>
+                <button class="btn">Learn more</button>
+            </div>
+        </article>
+    </section>
+    <section class="faq">
+        <article class="faq-left">
+            <div class="play">
+                <img src="./assets/controls-play.svg" alt="play" class="play-video">
+            </div>
+        </article>
+        <article class="faq-right">
+            <h2 class="faq-heding">Commonly Asked Questions</h2>
+            <div id="accordion-resizer" class="ui-widget-content faq-acc">
+                <div id="accordion">
+                    <h3>Wise busy past both park when an ye no Nay likely her</h3>
+                    <div>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                            repudiandae sint et.</p>
+                    </div>
+                    <h3>Written enquire painful ye to offices forming it</h3>
+                    <div>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                            repudiandae sint et.</p>
+                    </div>
+                    <h3>In finished on he speaking suitable advanced if happiness</h3>
+                    <div>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                            repudiandae sint et.</p>
+                    </div>
+                    <h3>People as period twenty my extent as Set was better</h3>
+                    <div>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                            repudiandae sint et.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="testim">
+        <h3 class="testim-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        <div class="testim-pic"></div>
+        <p class="testim-position">Daniela Jacobs / Big Company, LLC</p>
+        <div class="testim-controls">
+            <div class="up-key"></div>
+            <div class="down-key"></div>
+        </div>
+    </section>
 </body>
+
 </html>

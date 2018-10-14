@@ -1,0 +1,72 @@
+.testim {
+    height: 60vh;
+    background-color: $testim-bg;
+    @include flexCenter;
+    flex-direction: column;
+
+    .testim-header {
+        @include setText(2rem, normal, Merriweather, $text-grey);
+        line-height: 4rem;
+        width: 60%;
+        text-align: center;
+
+        &::before {
+            content: open-quote;
+        }
+
+        &::after {
+            content: close-quote;
+        }
+    }
+
+    .testim-pic {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background: url('../assets/picture-testimonials.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .testim-position {
+        @include setText(1.6rem, normal, Open Sans, $text-grey);
+    }
+
+    .testim-controls {
+        @include flexCenter;
+        margin-top: 3rem;
+        
+        .up-key {
+            width: 2.4rem;
+            height: 2.4rem;
+            background: url(../assets/up-arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-color: #cccccc;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $nav-link-hover;
+            }
+        }
+
+        .down-key {
+            width: 2.4rem;
+            height: 2.4rem;
+            background: url(../assets/down-arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-color: #cccccc;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $nav-link-hover;
+            }
+        }
+    }
+}

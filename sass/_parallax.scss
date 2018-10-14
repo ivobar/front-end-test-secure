@@ -1,0 +1,54 @@
+.parallax {
+    height: 55vh;
+    background: url(../assets/bg-parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    .parallax-head {
+        margin-left: $left-ident;
+        text-align: left;
+        padding-top: 12.9rem;
+
+        .top-head {
+            @include setText(2.8rem,normal, Open Sans, $text-white);
+            text-transform: uppercase;
+        }
+
+        .hor-line {
+            width: 10rem;
+            border: 1px solid $nav-link-hover;
+            margin: 2rem 0;
+        }
+
+        .bot-head {
+            @include setText(5.5rem, 500, Open Sans, $text-white);
+            width: 40%;
+            text-transform: uppercase;
+            line-height: 5rem;
+        }
+
+        .parallax-controls {
+            margin-top: 3.5rem;
+
+            .btn {
+                @include setText(1.6rem, normal, Lato, $text-white);
+                text-transform: uppercase;
+                border: none;
+                background-color: $btn-grey;
+                border-radius: .5rem;
+                padding: 2rem 6rem;
+                transition: all .5s;
+
+                &:first-child {
+                    margin-right: 1rem;
+                }
+
+                &:hover {
+                    background-color: $nav-link-hover;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+};

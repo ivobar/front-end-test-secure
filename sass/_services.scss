@@ -1,0 +1,98 @@
+.services {
+  display: flex;
+  height: 60vh;
+
+  .services-left {
+    width: 40%;
+    margin-left: $left-ident;
+    padding-right: 8rem;
+
+    .services-heading {
+      @include setText(4rem, normal, Open Sans, black);
+      text-transform: uppercase;
+      border-left: 3px solid $nav-link-hover;
+      line-height: 4rem;
+      padding-left: 2rem;
+      margin-top: 6rem;
+    }
+
+    .services-subheading {
+      @include setText(1.7rem, 300, Merriweather, $text-grey);
+      margin-top: 2rem;
+      line-height: 3rem;
+    }
+
+    .services-info {
+      @include setText(1.6rem, 300, Open Sans, $text-grey);
+      margin-top: 4rem;
+      line-height: 3rem;
+    }
+  }
+
+  .services-right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .service-card {
+      width: 33.3333%;
+      height: 50%;
+      border-left: 1px solid $card-border;
+      @include flexCenter;
+      flex-direction: column;
+      position: relative;
+      transition: all .4s;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-bottom: 1px solid $card-border;
+      }
+
+      .card-head {
+        margin-top: 2rem;
+        @include setText(1.4rem, bold, Open Sans, $text-grey);
+        text-transform: uppercase;
+      }
+
+      .card-info {
+        display: none;
+        text-align: center;
+        @include setText(1.3rem, normal, Open Sans, $text-grey);
+        margin-top: 1.5rem;
+      }
+
+      .card-expand {
+        @include flexCenter;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem 0;
+
+        .card-expand-icon {
+          height: 2rem;
+        }
+      }
+
+      &:hover {
+        background-color: $card-hover-bg;
+
+        .card-head {
+          color: $text-white;
+        }
+
+        .card-info {
+          display: unset;
+          color: $text-light-grey;
+        }
+
+        .card-expand {
+            &:hover {
+                background-color: $nav-link-hover;
+                cursor: pointer;
+            }
+        }
+      }
+    }
+  }
+}

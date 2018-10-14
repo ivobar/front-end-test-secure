@@ -1,0 +1,139 @@
+.header {
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../assets/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+  
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include dottedBackground;
+        opacity: .1;
+    }
+    .navigation {
+      background-color: rgba($color: $nav-bg, $alpha: 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 $left-ident;
+  
+      .logo {
+        @include setText(2.4rem, bold, Raleway, $nav-link);
+      }
+  
+      .links {
+        display: flex;
+        list-style: none;
+        position: relative;
+        li {
+          flex: 1;
+          padding: 2rem 3rem;
+  
+          a {
+            &:visited,
+            &:link {
+              text-decoration: none;
+              text-transform: uppercase;
+              @include setText(1.5rem, bold, Raleway, $nav-link);
+            }
+  
+            &:hover {
+              color: $nav-link-hover;
+            }
+          }
+        }
+      }
+  
+      .dropdown {
+        position: relative;
+  
+        .dropdown-list {
+          position: absolute;
+          left: -2rem;
+          top: 5.9rem;
+          list-style: none;
+          background-color: $nav-dropdown;
+          width: 250px;
+          padding: 0 5rem;
+          display: none;
+  
+          li {
+            padding: 1rem 0;
+  
+            a {
+              text-transform: none;
+            }
+          }
+        }
+  
+        &:hover {
+          .dropdown-list {
+            display: unset;
+          }
+        }
+      }
+    }
+  
+    .title-container {
+      position: absolute;
+      width: 76rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+      .title {
+        @include setText(6rem, normal, Open Sans, #fff);
+        text-align: center;
+        text-transform: uppercase;
+        border-right: 5px solid $cursor-heading;
+        line-height: 7rem;
+  
+        span {
+          font-weight: bold;
+        }
+      }
+  
+      .hor-line {
+        width: 15rem;
+        margin: 5rem auto;
+        border: 1px solid $nav-link-hover;
+      }
+  
+      .subhead {
+        text-align: center;
+        @include setText(1.6rem, bold, Myriad Pro, $nav-link);
+        line-height: 3rem;
+      }
+    }
+  
+    .hero-controls {
+      position: absolute;
+      right: 10rem;
+      bottom: 1rem;
+      @include flexCenter;
+  
+      .control-text {
+        text-transform: uppercase;
+        line-height: 3rem;
+        @include setText(1rem, bold, Myriad Pro, $nav-link);
+      }
+  
+      .control-container {
+        background-color: rgba($color: $nav-bg, $alpha: 0.6);
+        height: 4.5rem;
+        width: 4.5rem;
+        margin: 0 0.5rem;
+        @include flexCenter;
+        border-radius: 50%;
+      }
+      
+      img {
+        height: 1.8rem;
+      }
+    }
+  }

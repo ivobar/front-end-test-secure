@@ -1,0 +1,36 @@
+//colors
+$nav-bg: #101011;
+$nav-link: #fff;
+$nav-link-hover: #da491c;
+$nav-dropdown: #111215;
+$cursor-heading: #c0c2c4;
+$text-grey: #333333;
+$text-light-grey: #999999;
+$text-white: #fff;
+$card-border: rgba(128, 128, 128, 0.4);
+$card-hover-bg: #292929;
+$btn-grey: #323232;
+$testim-bg: #f0eeee;
+
+//paddings
+$left-ident: 7rem;
+
+//mixins
+@mixin setText($size, $weight, $family, $color) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin dottedBackground {
+  background: linear-gradient(90deg, #ffffff (4px - 1px), transparent 1%) center,
+    linear-gradient(#ffffff (4px - 1px), transparent 1%) center, #000000;
+  background-size: 4px 4px;
+}
