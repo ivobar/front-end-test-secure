@@ -1,28 +1,98 @@
-// colors
-$nav-bg: #2a2c2f;
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+//colors
+$nav-bg: #2c2d30;
+$nav-link: #fff;
 $nav-link-hover: #da491c;
 $nav-dropdown: #111215;
-$head-controls: #5e6164;
+
+//paddings
+$left-ident: 7rem;
+
+//mixins
+@mixin setText($size, $weight, $family, $color) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
 
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  box-sizing: border-box;
 }
+
 .header {
-    background: url(../assets/bg-header.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+  background: url(/assets/bg-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .navigation {
+    background-color: rgba($color: $nav-bg, $alpha: 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $left-ident;
+    .logo {
+      @include setText(2.4rem, bold, Raleway, $nav-link);
+    }
+    .links {
+      display: flex;
+      list-style: none;
+      li {
+        flex: 1;
+        padding: 2rem 3rem;
+        a {
+          &:visited,
+          &:link {
+            text-decoration: none;
+            text-transform: uppercase;
+            @include setText(1.5rem, bold, Raleway, $nav-link);
+          }
+
+          &:hover {
+            color: $nav-link-hover;
+          }
+        }
+      }
+    }
+    .dropdown {
+      position: relative;
+      .dropdown-list {
+        position: absolute;
+        left: -2rem;
+        top: 5.9rem;
+        list-style: none;
+        background-color: $nav-dropdown;
+        width: 250px;
+        padding: 0 5rem;
+        display: none;
+        li {
+          padding: 1rem 0;
+          a {
+            text-transform: none;
+          }
+        }
+      }
+      &:hover {
+          .dropdown-list {
+              display: unset;
+          }
+      }
+    }
+  }
 }

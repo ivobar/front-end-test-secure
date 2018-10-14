@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 *,
 *:before,
 *:after {
@@ -9,11 +10,54 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  box-sizing: border-box; }
 
 .header {
-  background: url(../assets/bg-header.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat; }
+  background: url(/assets/bg-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .navigation {
+    background-color: rgba(44, 45, 48, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem; }
+    .header .navigation .logo {
+      font-family: Raleway, sans-serif;
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #fff; }
+    .header .navigation .links {
+      display: flex;
+      list-style: none; }
+      .header .navigation .links li {
+        flex: 1;
+        padding: 2rem 3rem; }
+        .header .navigation .links li a:visited, .header .navigation .links li a:link {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: Raleway, sans-serif;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #fff; }
+        .header .navigation .links li a:hover {
+          color: #da491c; }
+    .header .navigation .dropdown {
+      position: relative; }
+      .header .navigation .dropdown .dropdown-list {
+        position: absolute;
+        left: -2rem;
+        top: 5.9rem;
+        list-style: none;
+        background-color: #111215;
+        width: 250px;
+        padding: 0 5rem;
+        display: none; }
+        .header .navigation .dropdown .dropdown-list li {
+          padding: 1rem 0; }
+          .header .navigation .dropdown .dropdown-list li a {
+            text-transform: none; }
+      .header .navigation .dropdown:hover .dropdown-list {
+        display: unset; }
