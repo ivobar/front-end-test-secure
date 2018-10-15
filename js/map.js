@@ -171,7 +171,7 @@ function initMap() {
     map: map,
     title: "Hello World!",
     icon: {
-      url: "../assets/map-marker.svg"
+      url: "./assets/map-marker.svg"
     }
   });
 }
