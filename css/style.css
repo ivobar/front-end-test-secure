@@ -182,7 +182,8 @@ body {
         font-size: 1.4rem;
         font-weight: bold;
         color: #333333;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-align: center; }
       .services .services-right .service-card .card-info {
         display: none;
         text-align: center;
@@ -396,3 +397,83 @@ body {
       .testim .testim-controls .down-key:hover {
         cursor: pointer;
         background-color: #da491c; }
+
+.counter {
+  height: 60vh;
+  background: url(../assets/count-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 13rem;
+  display: flex;
+  position: relative; }
+  .counter .counter-info {
+    width: 45%;
+    margin-left: 7rem; }
+    .counter .counter-info .counter-head {
+      font-family: Open Sans, sans-serif;
+      font-size: 2.6rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 3rem; }
+    .counter .counter-info .counter-text {
+      font-family: Open Sans, sans-serif;
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: #fff;
+      line-height: 3rem; }
+    .counter .counter-info .counter-counts {
+      display: flex;
+      margin-top: 2rem; }
+      .counter .counter-info .counter-counts .info-counts {
+        display: flex;
+        margin-right: 6rem; }
+        .counter .counter-info .counter-counts .info-counts .commits-ico {
+          background: url(../assets/commits.svg);
+          width: 5rem;
+          height: 5rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .counter .counter-info .counter-counts .info-counts .clients-ico {
+          background: url(../assets/clients.svg);
+          width: 5rem;
+          height: 5rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .counter .counter-info .counter-counts .info-counts .bugs-ico {
+          background: url(../assets/bugs-fixed.svg);
+          width: 5rem;
+          height: 5rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .counter .counter-info .counter-counts .info-counts .counter-text {
+          display: flex;
+          flex-direction: column;
+          margin-top: 0.8rem; }
+          .counter .counter-info .counter-counts .info-counts .counter-text .count {
+            font-family: Open Sans, sans-serif;
+            font-size: 6rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 2rem; }
+          .counter .counter-info .counter-counts .info-counts .counter-text .count-name {
+            font-family: Open Sans, sans-serif;
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #fff; }
+  .counter .person {
+    background: url(../assets/person.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 110%;
+    width: 60rem;
+    position: absolute;
+    bottom: 0;
+    right: 2rem; }
+
+.map {
+  height: 40vh; }
+  .map #map {
+    height: 100%; }

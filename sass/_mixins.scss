@@ -34,3 +34,11 @@ $left-ident: 7rem;
     linear-gradient(#ffffff (4px - 1px), transparent 1%) center, #000000;
   background-size: 4px 4px;
 }
+
+@mixin counterIncons {
+  width: 5rem;
+  height: 5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

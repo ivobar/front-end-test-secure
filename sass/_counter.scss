@@ -1,0 +1,75 @@
+.counter {
+  height: 60vh;
+  background: url(../assets/count-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 13rem;
+  display: flex;
+  position: relative;
+
+  .counter-info {
+    width: 45%;
+    margin-left: $left-ident;
+
+    .counter-head {
+      @include setText(2.6rem, bold, Open Sans, $text-white);
+      margin-bottom: 3rem;
+    }
+
+    .counter-text {
+      @include setText(1.4rem, normal, Open Sans, $text-white);
+      line-height: 3rem;
+    }
+
+    .counter-counts {
+      display: flex;
+      margin-top: 2rem;
+
+      .info-counts {
+        display: flex;
+        margin-right: 6rem;
+
+        .commits-ico {
+          background: url(../assets/commits.svg);
+          @include counterIncons;
+        }
+
+        .clients-ico {
+          background: url(../assets/clients.svg);
+          @include counterIncons;
+        }
+
+        .bugs-ico {
+          background: url(../assets/bugs-fixed.svg);
+          @include counterIncons;
+        }
+
+        .counter-text {
+          display: flex;
+          flex-direction: column;
+          margin-top: 0.8rem;
+
+          .count {
+            @include setText(6rem, bold, Open Sans, $text-white);
+            margin-bottom: 2rem;
+          }
+
+          .count-name {
+            @include setText(2.4rem, normal, Open Sans, $text-white);
+          }
+        }
+      }
+    }
+  }
+
+  .person {
+      background: url(../assets/person.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 110%;
+      width: 60rem;
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+  }
+}

@@ -53,6 +53,7 @@
         margin-top: 2rem;
         @include setText(1.4rem, bold, Open Sans, $text-grey);
         text-transform: uppercase;
+        text-align: center;
       }
 
       .card-info {

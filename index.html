@@ -10,6 +10,9 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCipjWvQD4KDq0gQr4h3767mYhzRFUy0Jc&callback=initMap" async
+        defer></script>
 </head>
 
 <body>
@@ -168,13 +171,51 @@
         </article>
     </section>
     <section class="testim">
-        <h3 class="testim-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        <h3 class="testim-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.
+        </h3>
         <div class="testim-pic"></div>
         <p class="testim-position">Daniela Jacobs / Big Company, LLC</p>
         <div class="testim-controls">
             <div class="up-key"></div>
             <div class="down-key"></div>
         </div>
+    </section>
+    <section class="counter">
+        <div class="counter-info">
+            <h2 class="counter-head">Solving Problems and Keeping Clients Happy</h2>
+            <p class="counter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="counter-counts">
+                <div class="info-counts">
+                    <div class="commits-ico"></div>
+                    <div class="counter-text">
+                        <span class="count">886</span>
+                        <span class="count-name">Commits</span>
+                    </div>
+                </div>
+                <div class="info-counts">
+                    <div class="clients-ico"></div>
+                    <div class="counter-text">
+                        <span class="count">68+</span>
+                        <span class="count-name">Happy Clients</span>
+                    </div>
+                </div>
+                <div class="info-counts">
+                    <div class="bugs-ico"></div>
+                    <div class="counter-text">
+                        <span class="count">335</span>
+                        <span class="count-name">Bugs Fixed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="person"></div>
+    </section>
+    <section class="map">
+        <div id="map"></div>
     </section>
 </body>
 
