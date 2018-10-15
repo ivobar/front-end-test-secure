@@ -1,0 +1,104 @@
+.foot {
+  padding: $left-ident;
+  display: flex;
+  background-color: $footer-bg;
+
+  .foot-left {
+    width: 80%;
+    padding-right: 10rem;
+
+    ul {
+      @include linksList;
+
+      li {
+          margin-left: 3rem;
+
+          &:first-child{
+              margin-left: 0;
+          }
+      }
+
+      a {
+          @include setText(1.3rem, bold, Open Sans, $text-light-grey);
+      }
+    }
+
+    .foot-contact {
+        margin-top: 2rem;
+
+        .foot-input {
+            display: flex;
+            flex-direction: column;
+            
+            input {
+                @include setText(6rem, light, Open Sans, $text-light-grey);
+                padding: 1rem 0 1rem 0;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $text-light-grey;
+            }
+
+            label {
+                @include setText(1.4rem, normal, Open Sans, $text-light-grey);
+                margin-top: 2rem;
+            }
+
+            .copy {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .copy {
+        margin-top: 7rem;
+        @include setText(1.4rem, normal, Open Sans, $text-light-grey);
+    }
+  }
+
+  .foot-right {
+    width: 20%;
+
+    h3 {
+        @include setText(2.6rem, 500, Open Sans, $text-white);
+    }
+
+    p {
+        @include setText(1.4rem, 500, Open Sans, $text-light-grey);
+        margin-top: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .icons {
+        display: flex;
+        margin-top: 1rem;
+
+        .twitter {
+            @include setIcon(2.5rem,2.5rem,'../assets/twitter-with-circle.svg');
+        }
+
+        .facebook {
+            @include setIcon(2.5rem, 2.5rem, '../assets/facebook-with-circle.svg');
+        }
+
+        .google {
+            @include setIcon(2.5rem, 2.5rem, '../assets/google+-with-circle.svg');
+        }
+
+        .pinterest {
+            @include setIcon(2.5rem, 2.5rem, '../assets/pinterest-with-circle.svg');
+        }
+
+        .linkedin {
+            @include setIcon(2.5rem, 2.5rem, '../assets/linkedin-with-circle.svg');
+        }
+
+        .dribble {
+            @include setIcon(2.5rem, 2.5rem, '../assets/dribbble-with-circle.svg');
+        }
+
+        div {
+            margin-right: .5rem;
+        }
+    }
+  }
+}

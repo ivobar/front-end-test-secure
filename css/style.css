@@ -570,3 +570,116 @@ body {
       .contact .contact-right .btn:hover {
         background-color: #da491c;
         cursor: pointer; }
+
+.foot {
+  padding: 7rem;
+  display: flex;
+  background-color: #292929; }
+  .foot .foot-left {
+    width: 80%;
+    padding-right: 10rem; }
+    .foot .foot-left ul {
+      display: flex;
+      list-style: none;
+      position: relative; }
+      .foot .foot-left ul li a:visited, .foot .foot-left ul li a:link {
+        text-decoration: none;
+        text-transform: uppercase; }
+      .foot .foot-left ul li {
+        margin-left: 3rem; }
+        .foot .foot-left ul li:first-child {
+          margin-left: 0; }
+      .foot .foot-left ul a {
+        font-family: Open Sans, sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #999999; }
+    .foot .foot-left .foot-contact {
+      margin-top: 2rem; }
+      .foot .foot-left .foot-contact .foot-input {
+        display: flex;
+        flex-direction: column; }
+        .foot .foot-left .foot-contact .foot-input input {
+          font-family: Open Sans, sans-serif;
+          font-size: 6rem;
+          font-weight: light;
+          color: #999999;
+          padding: 1rem 0 1rem 0;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid #999999; }
+        .foot .foot-left .foot-contact .foot-input label {
+          font-family: Open Sans, sans-serif;
+          font-size: 1.4rem;
+          font-weight: normal;
+          color: #999999;
+          margin-top: 2rem; }
+        .foot .foot-left .foot-contact .foot-input .copy {
+          margin-top: 2rem; }
+    .foot .foot-left .copy {
+      margin-top: 7rem;
+      font-family: Open Sans, sans-serif;
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: #999999; }
+  .foot .foot-right {
+    width: 20%; }
+    .foot .foot-right h3 {
+      font-family: Open Sans, sans-serif;
+      font-size: 2.6rem;
+      font-weight: 500;
+      color: #fff; }
+    .foot .foot-right p {
+      font-family: Open Sans, sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #999999;
+      margin-top: 1rem;
+      line-height: 2.5rem; }
+    .foot .foot-right .icons {
+      display: flex;
+      margin-top: 1rem; }
+      .foot .foot-right .icons .twitter {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../assets/twitter-with-circle.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .foot .foot-right .icons .facebook {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../assets/facebook-with-circle.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .foot .foot-right .icons .google {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../assets/google+-with-circle.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .foot .foot-right .icons .pinterest {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../assets/pinterest-with-circle.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .foot .foot-right .icons .linkedin {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../assets/linkedin-with-circle.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .foot .foot-right .icons .dribble {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../assets/dribbble-with-circle.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .foot .foot-right .icons div {
+        margin-right: .5rem; }

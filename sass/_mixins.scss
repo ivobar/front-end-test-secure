@@ -11,6 +11,7 @@ $card-border: rgba(128, 128, 128, 0.4);
 $card-hover-bg: #292929;
 $btn-grey: #323232;
 $testim-bg: #f0eeee;
+$footer-bg: #292929;
 
 //paddings
 $left-ident: 7rem;
@@ -51,4 +52,28 @@ $left-ident: 7rem;
   border-radius: 0.5rem;
   padding: 2rem 6rem;
   transition: all 0.5s;
+}
+
+@mixin linksList {
+  display: flex;
+  list-style: none;
+  position: relative;
+  li {
+    a {
+      &:visited,
+      &:link {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@mixin setIcon($width, $height, $url) {
+  width: $width;
+  height: $height;
+  background: url($url);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
