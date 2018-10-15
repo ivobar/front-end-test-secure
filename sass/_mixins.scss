@@ -42,3 +42,13 @@ $left-ident: 7rem;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@mixin button {
+  @include setText(1.6rem, normal, Lato, $text-white);
+  text-transform: uppercase;
+  border: none;
+  background-color: $btn-grey;
+  border-radius: 0.5rem;
+  padding: 2rem 6rem;
+  transition: all 0.5s;
+}

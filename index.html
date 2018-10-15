@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/accordion.js"></script>
@@ -216,6 +218,53 @@
     </section>
     <section class="map">
         <div id="map"></div>
+    </section>
+    <section class="contact">
+        <div class="contact-left">
+            <h2 class="contact-head">Contact us</h2>
+            <p class="contact-sub">Quis autem vel eum molestiae consequatur, eum fugiat quo voluptas nulla pariatur?</p>
+            <div class="address">
+                <h4 class="address-head">Headquarters</h4>
+                <p>123 W. Mission Blvd.</p>
+                <p>Suite 101-191</p>
+                <p>Pomona, Ca. 91766</p>
+            </div>
+            <div class="address">
+                <h4 class="address-head">Get in touch</h4>
+                <p><i class="fas fa-phone"></i>213-123-4567</p>
+                <p><i class="fab fa-skype"></i>user ID</p>
+                <p><i class="fas fa-envelope"></i>email@domain.com</p>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form action="" class="contact-form">
+                <div class="row">
+                    <div class="input">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="budget">What's your budget?</label>
+                        <input id="budget" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="services">Services you're inquiring about</label>
+                        <input id="services" type="text">
+                    </div>
+                </div>
+                <div class="textarea">
+                    <label for="about">Tell us about your project</label>
+                    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn" type="submit">Send message</button>
+            </form>
+        </div>
     </section>
 </body>
 

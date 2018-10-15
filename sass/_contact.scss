@@ -1,0 +1,105 @@
+.contact {
+  display: flex;
+  padding: $left-ident;
+  background-color: $testim-bg;
+
+  .contact-left {
+    width: 35%;
+    padding-right: 2rem;
+
+    .contact-head {
+      @include setText(3.6rem, normal, Open Sans, black);
+      text-transform: uppercase;
+      border-left: 3px solid $text-light-grey;
+      padding-left: 2rem;
+    }
+
+    .contact-sub {
+      @include setText(1.8rem, normal, Merriweather, $text-light-grey);
+      margin-top: 1rem;
+      line-height: 3.5rem;
+    }
+
+    .address {
+      margin-top: 3rem;
+      @include setText(1.6rem, normal, Lato, $text-grey);
+
+      .address-head {
+        text-transform: uppercase;
+        color: black;
+        margin-bottom: 1.6rem;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .contact-right {
+    width: 65%;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+
+        label {
+          @include setText(1.4rem, normal, Open Sans, $text-grey);
+          margin-bottom: 1rem;
+        }
+
+        input {
+          border: 1px solid #d2d2d2;
+          font-size: 1.8rem;
+          padding: 1rem;
+          font-family: Open Sans;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: 3rem;
+      }
+    }
+
+    .textarea {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+
+      label {
+        @include setText(1.4rem, normal, Open Sans, $text-grey);
+        margin-bottom: 1rem;
+      }
+
+      textarea {
+        resize: none;
+        height: 15rem;
+        border: 1px solid #d2d2d2;
+        font-size: 1.8rem;
+        padding: 1rem;
+        font-family: Open Sans;
+      }
+    }
+
+    .btn {
+      @include button;
+      margin-top: 3rem;
+
+      &:hover {
+        background-color: $nav-link-hover;
+        cursor: pointer;
+      }
+    }
+  }
+}

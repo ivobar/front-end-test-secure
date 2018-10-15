@@ -32,13 +32,7 @@
             margin-top: 3.5rem;
 
             .btn {
-                @include setText(1.6rem, normal, Lato, $text-white);
-                text-transform: uppercase;
-                border: none;
-                background-color: $btn-grey;
-                border-radius: .5rem;
-                padding: 2rem 6rem;
-                transition: all .5s;
+                @include button;
 
                 &:first-child {
                     margin-right: 1rem;
